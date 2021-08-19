@@ -3,6 +3,7 @@ import { CLOSETS } from '../shared/closets';
 import { View, Text, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements';
 import DisplayBottoms from './DisplayBottomsComponent';
+import ButtonPanel from './ButtonPanel';
 
 // this is a card displaying a text that will be resued later to place a banner or a footer component.
 function RenderItem({ item }) {  //rendering the items
@@ -18,6 +19,7 @@ function RenderItem({ item }) {  //rendering the items
                 </Text>
             </Card> 
             <DisplayBottoms />
+            <ButtonPanel />
             </View>
         );
     }

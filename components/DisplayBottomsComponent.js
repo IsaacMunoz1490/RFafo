@@ -6,7 +6,7 @@ import { View, Image, StyleSheet } from 'react-native';
 class DisplayBottoms extends Component {
     render() {
         return (
-            <View style={styles.container}>
+                <View style={styles.container}>
                 <Image 
                     style={styles.imgDisplay}
                     source={require('../assets/jeans.jpg')}
@@ -28,8 +28,7 @@ class DisplayBottoms extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1 ,
-        flexDirection: 'row',
-
+        flexDirection: 'column',
     },
     imgDisplay: {
         width: 150,
