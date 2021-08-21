@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
 import ClosetInfo from './ClosetInfoComponent';
+import addBottomsComponent from './addBottomsComponent';
+import addTopsComponent from './addTopsComponent';
+import addCoatsComponent from './addCoatsComponent';
+import addHatComponent from './addHatComponent';
+import addScarfComponent from './addScarfComponent';
+import addShoesComponent from './addShoesComponent';
+
 import Constants from 'expo-constants';
 import { View, Platform } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -18,6 +25,108 @@ const ClosetListNavigator = createStackNavigator(
     },
     {
         initialRouteName: 'Closet',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const BottomsNavigator = createStackNavigator(
+    {
+        Bottoms: { screen: addBottomsComponent }
+    },
+    {
+        initialRouteName: 'Bottoms',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const TopsNavigator = createStackNavigator(
+    {
+        Tops: { screen: addTopsComponent }
+    },
+    {
+        initialRouteName: 'Tops',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const CoatsNavigator = createStackNavigator(
+    {
+        Coats: { screen: addCoatsComponent }
+    },
+    {
+        initialRouteName: 'Coats',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const HatsNavigator = createStackNavigator(
+    {
+        Hats: { screen: addHatComponent }
+    },
+    {
+        initialRouteName: 'Hats',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const ScarfNavigator = createStackNavigator(
+    {
+        Scarf: { screen: addScarfComponent }
+    },
+    {
+        initialRouteName: 'Scarf',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const ShoesNavigator = createStackNavigator(
+    {
+        Shoes: { screen: addShoesComponent }
+    },
+    {
+        initialRouteName: 'Shoes',
         defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#5637DD'
@@ -50,7 +159,14 @@ const HomeNavigator = createStackNavigator(
 const MainNavigator = createDrawerNavigator(
     {
         Home: { screen: HomeNavigator },
-        Closet: { screen: ClosetListNavigator }
+        Closet: { screen: ClosetListNavigator },
+        Bottoms: { screen: BottomsNavigator},
+        Tops: { screen: TopsNavigator},
+        Coats: { screen: CoatsNavigator},
+        Hats: { screen: HatsNavigator},
+        Scarf: { screen: ScarfNavigator},
+        Shoes: { screen: ShoesNavigator},
+
     },
     {
         drawerBackgroundColor: '#CEC8FF'

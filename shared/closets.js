@@ -1,4 +1,4 @@
-export const CLOSETS = [ //closet list options
+export const CLOSETS = [ //closet list item in the Closet Information page
     {
       id: 0,
       name: "Bottoms",

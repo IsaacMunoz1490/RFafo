@@ -55,4 +55,3 @@ const styles = StyleSheet.create({
 
 export default ClosetList;
 
-//IT WORKS AND ITS READY TO IMPORTd , connect the list and show on APP.js

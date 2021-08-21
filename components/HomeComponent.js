@@ -10,14 +10,14 @@ function RenderItem({ item }) {  //rendering the items
     if (item) {
         return (
             <View>
-            <Card
+            {/* <Card
                 featuredTitle={item.name}
             > 
                 <Text style={{ margin: 10 }}>
                     {item.name} {"\n"}
                     {item.description}
                 </Text>
-            </Card> 
+            </Card>  */}
             <DisplayBottoms />
             <ButtonPanel />
             </View>
@@ -46,8 +46,6 @@ class Home extends Component {
             <RenderItem  
                 item={this.state.closets.filter(closet => closet.featured)[0]}
             />
-            <View>
-            </View>
         </ScrollView>
         ); 
     }
